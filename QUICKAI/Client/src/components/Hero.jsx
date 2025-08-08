@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 
+
 const Hero = () => {
   const navigate = useNavigate();
   return (
@@ -33,6 +34,8 @@ const Hero = () => {
         <img src={assets.user_group} alt="" className="h-8" /> Trusted by 10k+
         people
       </div>
+
+
     </div>
   );
 };
