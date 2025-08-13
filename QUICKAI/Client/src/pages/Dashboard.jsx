@@ -3,12 +3,15 @@ import { dummyCreationData } from "../assets/assets";
 import { Gem, Sparkles } from "lucide-react";
 import { Protect } from "@clerk/clerk-react";
 import CreationItems from "../components/CreationItems";
+// import { useUser } from "@clerk/clerk-react";
 
 const Dashboard = () => {
   const [creation, setCreation] = useState([]);
   const getDashboardData = async () => {
     setCreation(dummyCreationData);
   };
+
+  // const plan = user?.privateMetadata?.plan || "free";
 
   useEffect(() => {
     getDashboardData();

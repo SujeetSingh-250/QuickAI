@@ -2,6 +2,8 @@ import { Edit, Sparkles } from 'lucide-react'
 import React from 'react'
 import { useState } from 'react'
 
+
+
 const WriteArticle = () => {
 
   const articleLength = [
