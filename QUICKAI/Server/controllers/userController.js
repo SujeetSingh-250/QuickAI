@@ -1,4 +1,4 @@
-import sql from "../config/db";
+import sql from "../config/db.js";
 
 
 export const getUserCreations = async (req, res) => {
@@ -13,7 +13,7 @@ export const getUserCreations = async (req, res) => {
 
 export const getPublishedCreations = async (req, res) => {
     try {
-        const creations = await sql `SELECT * FROM creations WHERE is_published = true ORDER BY created_at DESC`;
+        const creations = await sql `SELECT * FROM creations WHERE publish = true ORDER BY created_at DESC`;
 
         res.json({success:true, creations})
 
